@@ -1,0 +1,231 @@
+
+/* General page styling */
+body {
+    background-color: #f7f6f2;
+    color: #252525;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 40px;
+    margin: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7e2;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo */
+.logo {
+    color: #253b32;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #6b8e73;
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-links a {
+    color: #253b32;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 16px;
+    border: 1px solid #253b32;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #253b32;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Welcome section */
+.hero {
+    padding: 100px 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.intro-label,
+.section-label {
+    color: #64836b;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Main heading */
+h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    color: #252525;
+    margin-bottom: 20px;
+}
+
+h1 span {
+    color: #253b32;
+}
+
+/* Introduction paragraph */
+.intro {
+    max-width: 600px;
+    color: #626862;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Main button */
+.my-button {
+    display: inline-block;
+    background-color: #253b32;
+    color: white;
+    padding: 12px 24px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.my-button:hover {
+    background-color: #456b53;
+    transform: translateY(-2px);
+}
+
+/* Content sections */
+.section {
+    padding: 70px 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    color: #253b32;
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.section > p:not(.section-label) {
+    color: #626862;
+    max-width: 700px;
+    line-height: 1.8;
+}
+
+/* Skills */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-list span {
+    background-color: #e8eee8;
+    color: #253b32;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Project cards */
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7e2;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 18px;
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.project-card h3 {
+    color: #253b32;
+    margin-top: 0;
+}
+
+.project-card p {
+    color: #626862;
+    line-height: 1.7;
+}
+
+/* Contact section */
+.contact-section {
+    background-color: #e8eee8;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #777d77;
+    font-size: 14px;
+}
+
+/* Smaller screens, such as phones */
+@media (max-width: 650px) {
+    nav {
+        flex-direction: column;
+        padding: 20px;
+        margin: 12px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .nav-links a {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 60px 24px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .intro {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 50px 24px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
